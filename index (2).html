@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proposal for Aarya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            color: #ff4081;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .yes {
+            background-color: #ff4081;
+            color: white;
+        }
+
+        .no {
+            background-color: #555;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Aarya 💖</h1>
+    <p>I love you so much ❤️</p>
+    <h2>Do you love me?</h2>
+
+    <div class="tenor-gif-embed"
+         data-postid="22885016"
+         data-share-method="host"
+         data-aspect-ratio="1"
+         data-width="300px">
+        <a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a>
+    </div>
+
+    <br><br>
+
+    <button class="btn yes" onclick="yesClicked()">Yes 💕</button>
+    <button class="btn no" onmouseover="moveButton()">No 😜</button>
+</div>
+
+<script src="https://tenor.com/embed.js"></script>
+
+<script>
+    function yesClicked() {
+        alert("I love you so much Aarya 😍❤️");
+    }
+
+    function moveButton() {
+        var x = Math.random() * (window.innerWidth - 100);
+        var y = Math.random() * (window.innerHeight - 50);
+
+        var noBtn = document.querySelector(".no");
+        noBtn.style.left = x + "px";
+        noBtn.style.top = y + "px";
+    }
+</script>
+
+</body>
+</html>
